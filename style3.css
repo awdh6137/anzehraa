@@ -1,0 +1,117 @@
+.col_text{
+    color:  #e527b5;
+    }
+    
+    #AboutMyself{
+        width: 100%;
+        height: 100vh;
+        padding: 70px 0;
+    }
+    .div1{
+    max-width: 1100px;
+    margin: auto;
+    }
+    
+    #AboutMyself h2
+    {
+        text-align: center;
+        font-size: 38px;
+        color:  #e527b5;
+        font-weight: 600;
+    }
+    #AboutMyself h2 .Me{
+        color: #000000;
+    }
+    #AboutMyself hr{
+        width: 130px;
+        height: 2px;
+        background-color:  #e527b5;  
+        border: none;
+        margin-top: 5px;
+        margin-bottom: 0;
+        margin: auto;
+    }
+    #AboutMyself .AboutMyself_div1{
+        margin-top: 60px;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 50px;
+    }
+    #AboutMyself .AboutMyself_div1 .div2 h3{
+        font-size: 30px;
+        color: #000000;
+    
+    }
+    #AboutMyself .AboutMyself_div1 .div2 p{
+        margin-bottom: 30px;
+        color: #000000;
+    }
+    
+    #AboutMyself .AboutMyself_div1.div3 p{
+        color: #000000;
+        margin-bottom: 10px;
+        padding-bottom: 15px;
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+    #AboutMyself .AboutMyself_content .div3 p:hover{
+        background-color: #e527b5;
+        transform: scale(1.1);
+    }
+    .div3{
+border: 1px dashed black;
+border-radius: 2px;
+    }
+*{
+    margin: 0;
+    padding: 0;
+    }
+ul{
+    text-align: center;
+
+}
+ul li{
+    list-style: none;
+    margin: 14px 0;
+    color: rgb(239, 55, 193)070;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    background: rgb(96, 213, 252);
+    padding: 10px 10px;
+    border-radius: 20px;
+    display: inline-block;
+    transition: 0.5s;
+    position: relative;
+    z-index: 100;
+}
+ul:hover li {
+opacity: 0;
+}
+ul li:hover{
+    transform: scale(1.5);
+    transform: scale(1.5);
+    background-color: rgb(243, 81, 189);
+    color: #fff;
+    opacity: 1;
+}
+
+ul li::after{
+    content: attr(data-text);
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 20px;
+    font-weight: 900;
+    opacity: 0;
+    pointer-events: none;
+
+
+}
+ul li:hover:after{
+opacity: 0.5;
+}
+ 
+    
